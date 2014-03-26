@@ -169,7 +169,6 @@ h1 {
 }
 
 .content .announcement-list li .announcement-prev-description h2 {
-<<<<<<< HEAD
     margin: 10px 0 5px;
 }
 .content .announcement-list li .announcement-prev-description h2 a {
@@ -177,12 +176,6 @@ h1 {
     cursor: pointer;
     font: 400 20px 'Helvetica';
     text-decoration: none;
-=======
-    color: #19B6A5;
-    cursor: pointer;
-    font-weight: 400;
-    margin: 10px 0 5px;
->>>>>>> 6c32bb59ed56100f249cad34ec6795c165038238
 }
 
 .content .announcement-list li .announcement-prev-description p {
