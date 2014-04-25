@@ -1,0 +1,58 @@
+<header>
+    <div class="wrap">
+        <div class="logo"><img src="img/logo.png" alt="Help me to find it logo"/></div>
+        <ul class="user-menu">
+            <li ui-sref="login">Login |</li>
+            <li ui-sref="registration">Registration</li>
+        </ul>
+        <h1>Duis autem vel eum iriure dolor in hendrerit in vulputate velit Veniam</h1>
+        <div class="add-announcement" ui-sref="new-announcement">+ Add announcement</div>
+    </div>
+</header>
+
+<content>
+    <div class="wrap">
+        <div class="l-sidebar">
+            <ul class="l-sidebar-menu">
+                <li><span class="icon icon-people"></span>People</li>
+                <li><span class="icon icon-animals"></span>Animals</li>
+                <li><span class="icon icon-things"></span>Things</li>
+                <li><span class="icon icon-crime"></span>Crime</li>
+                <li><span class="icon icon-settings"></span>Settings</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <ul rn-carousel rn-carousel-index="slideIndex2" class="gallery">
+                <li><img src="img/test4.jpg" alt=""/></li>
+                <li><img src="img/test2.jpg" alt=""/></li>
+                <li><img src="img/test3.jpg" alt=""/></li>
+                <li><img src="img/test1.jpg" alt=""/></li>
+            </ul>
+            <ul class="hm-item-carousel-thumbs">
+                <li ng-click="slideIndex2=0" ng-class="{'is-active': (slideIndex2==0)}"><img src="img/test4.jpg" alt=""/></li>
+                <li ng-click="slideIndex2=1" ng-class="{'is-active': (slideIndex2==1)}"><img src="img/test2.jpg" alt=""/></li>
+                <li ng-click="slideIndex2=2" ng-class="{'is-active': (slideIndex2==2)}"><img src="img/test3.jpg" alt=""/></li>
+                <li ng-click="slideIndex2=3" ng-class="{'is-active': (slideIndex2==3)}"><img src="img/test1.jpg" alt=""/></li>
+            </ul>
+            <div class="announcement-info">
+                <button class="connect-user">Connect</button>
+                <h2 class="item-title">{{ announcement.title }}</h2>
+                <div class="announcement-full-description">
+                    <p>{{ announcement.about }}</p>
+                </div>
+            </div>
+            <div class="announcement-map">
+                <img src="img/test-map.jpg" alt=""/>
+                <img class="map-pin" src="img/map-pin.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <div class="wrap">
+        <p class="site-name">Help me to find it</p>
+        <p>Copyright &copy; 2014. All rights reserved</p>
+    </div>
+</footer>

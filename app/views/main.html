@@ -1,0 +1,46 @@
+<header>
+    <div class="wrap">
+        <div class="logo"><img src="img/logo.png" alt="Help me to find it logo"/></div>
+        <ul class="user-menu">
+            <li ui-sref="login">Login |</li>
+            <li ui-sref="registration">Registration</li>
+        </ul>
+        <h1>Duis autem vel eum iriure dolor in hendrerit in vulputate velit Veniam</h1>
+        <div class="add-announcement" ui-sref="addAnnouncement">+ Add announcement</div>
+    </div>
+</header>
+
+<content>
+    <div class="wrap">
+        <div class="l-sidebar">
+            <ul class="l-sidebar-menu" ng-controller="CategoriesC">
+                <li ng-repeat="category in categories">
+                    <span class="icon icon-{{ category.name | lowercase | nospace}}"></span>
+                    {{ category.name }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <ul class="announcement-list">
+                <li ng-repeat="item in data">
+                    <div class="announcement-img-wrap">
+                        <img ng-src="{{ item.images[0].url }}" alt=""/>
+                    </div>
+                    <div class="announcement-prev-description">
+                        <h2><a ui-sref="item({ id: item.id })">{{ item.title }}</a></h2>
+                        <p>{{ item.about }}</p>
+                        <span>200m</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <div class="wrap">
+        <p class="site-name">Help me to find it</p>
+        <p>Copyright &copy; 2014. All rights reserved</p>
+    </div>
+</footer>

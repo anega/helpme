@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <div class="logo"><img src="img/logo.png" alt="Help me to find it logo"/></div>
+        <ul class="user-menu">
+            <li ui-sref="login">Login |</li>
+            <li ui-sref="registration">Registration</li>
+        </ul>
+        <h1>Duis autem vel eum iriure dolor in hendrerit in vulputate velit Veniam</h1>
+        <div class="page-heading">Add announcement</div>
+    </div>
+</header>
+
+<content>
+    <div class="wrap">
+        <div class="l-sidebar">
+            <ul class="l-sidebar-menu">
+                <li><span class="icon icon-people"></span>People</li>
+                <li><span class="icon icon-animals"></span>Animals</li>
+                <li><span class="icon icon-things"></span>Things</li>
+                <li><span class="icon icon-crime"></span>Crime</li>
+                <li><span class="icon icon-settings"></span>Settings</li>
+            </ul>
+        </div>
+
+        <div class="content add-item">
+            <ul class="add-item-pictures">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <input class="add-item-title" type="text" placeholder="Title"/>
+            <select name="item-type" id="item-type">
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+            <select name="item-category" id="item-category">
+                <option value="people">People</option>
+                <option value="animals">Animals</option>
+                <option value="things">Things</option>
+                <option value="crime">Crime</option>
+                <option value="settings">Settings</option>
+            </select>
+            <textarea name="add-item-description" id="add-item-description" placeholder="Description"></textarea>
+            <div class="add-map">
+                <img src="img/map-pin.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <div class="wrap">
+        <p class="site-name">Help me to find it</p>
+        <p>Copyright &copy; 2014. All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

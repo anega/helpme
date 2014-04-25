@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "People",
+        "photo": null,
+        "description": null
+    },
+    {
+        "id": 2,
+        "name": "Animals",
+        "photo": null,
+        "description": null
+    },
+    {
+        "id": 3,
+        "name": "Things",
+        "photo": null,
+        "description": null
+    },
+    {
+        "id": 4,
+        "name": "Crimes",
+        "photo": null,
+        "description": null
+    }
+]
